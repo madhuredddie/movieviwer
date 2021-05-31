@@ -20,8 +20,10 @@ app.use(function(req, res, next){
 	res.locals.connection = mysql.createConnection({
 		host     : 'localhost',
 		user     : 'root',
-		password : '',
-		database : 'test'
+		password : 'Madhu@123',
+		database : 'movies',
+    port     :  3307,
+    socketPath : '/var/run/mysqld/mysqld.sock'
 	});
 	res.locals.connection.connect();
 	next();
@@ -37,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+//app.use('/genres',genres);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

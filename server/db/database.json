@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "host": "localhost",
+        "user":   "root" ,
+        "password" : "Madhu@123",
+        "database": "movies",
+        "driver": "mysql",
+        "multipleStatements": true
+      }
+  
+  }

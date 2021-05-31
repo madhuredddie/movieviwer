@@ -8,6 +8,9 @@
   "dependencies": {
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
+    "csv-parser": "^3.0.0",
+    "db-migrate": "^0.11.12",
+    "db-migrate-mysql": "^2.1.2",
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "jade": "~1.11.0",
